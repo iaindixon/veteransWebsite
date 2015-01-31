@@ -1,12 +1,12 @@
-/******** Everything ********/
-*{
-    margin:0;
-    border-sizing: border-box;
-}
 /******** Fonts ********/
 @font-face{
     font-family: "marketDeco";
     src: url('fonts/Market_Deco.ttf');
+}
+/******** Everything ********/
+*{
+    margin:0;
+    border-sizing: border-box;
 }
 /******** Body ********/
 body{
@@ -25,7 +25,12 @@ body{
     
 }
 /******** Title ********/
- #title{
-     font-family: "marketDeco";
-     color: white;
+ #title {
+     font-family: marketDeco;
+     color: white;  
  }
+/******** Title ********/
+#picture img{
+    width:100%;
+    top 200px;
+}
