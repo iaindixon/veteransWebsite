@@ -1,0 +1,21 @@
+/******** Fonts ********/
+@font-face{
+    font-family: bebasNeue;
+    src: url('../fonts/BebasNeue.otf');
+}
+/******** Everything ********/
+*{
+    margin:0;
+    border-sizing: border-box;
+}
+/******** Body ********/
+body{
+    background-color:#F3F3F2    ;   
+}
+/******** Title ********/
+#title{
+    color:#008AE6 ;
+    font-family: bebasNeue;
+    margin-left: 5%;
+    margin-top: 3%;
+}

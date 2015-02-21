@@ -1,7 +1,7 @@
 /******** Fonts ********/
 @font-face{
-    font-family: "marketDeco";
-    src: url('fonts/Market_Deco.ttf');
+    font-family: marketDeco;
+    src: url('../fonts/Market_Deco.ttf');
 }
 /******** Everything ********/
 *{
@@ -32,5 +32,5 @@ body{
 /******** Title ********/
 #picture img{
     width:100%;
-    top 200px;
+    top: 200px;
 }
