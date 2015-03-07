@@ -6,16 +6,23 @@
 /******** Everything ********/
 *{
     margin:0;
-    border-sizing: border-box;
 }
 /******** Body ********/
 body{
-    background-color:#F3F3F2    ;   
+    background-color:#F3F3F2;   
 }
 /******** Title ********/
 #title{
-    color:#008AE6 ;
+    background-color: #95AFBA;
     font-family: bebasNeue;
-    margin-left: 5%;
-    margin-top: 3%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 0%;
+    box-shadow: 0px 0px 5px 0px #888888;
+    height:50px;
+}
+#title h1:only-of-type {
+    color:white;
+    position:relative;
+    left:45%;
 }
