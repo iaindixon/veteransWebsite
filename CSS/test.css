@@ -15,14 +15,37 @@ body{
 #title{
     background-color: #95AFBA;
     font-family: bebasNeue;
-    margin-left: 1%;
-    margin-right: 1%;
-    margin-top: 0%;
-    box-shadow: 0px 0px 5px 0px #888888;
-    height:50px;
+    margin-top: 10%;
+    margin-left:auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 2px 0px #888888;
+    height:100px;
+    width:50%;
 }
-#title h1:only-of-type {
+#title h1:only-of-type{
     color:white;
     position:relative;
-    left:45%;
+    text-align: center;
+    line-height: 100px;
+}
+/******** Portal ********/
+#portal{
+    background-color:#95B2C1;
+    height:300px;
+    width:20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /******** Portal ********/
+    transition: width 2s;
+}
+#portal:hover{
+    width: 100px;
+}
+/******** Footer ********/
+#footer{
+    background-color:#96B6CB;
+    position:fixed;
+    bottom:0%;
+    height:30px;
+    width:100%;
 }
