@@ -216,6 +216,10 @@ body{
     background-color:#95AFBA;
 }
 
+.container-fluid textbook{
+    color:red;
+}
+
 /******** Footer ********/
 #footer{
     background-color:#96B6CB;
