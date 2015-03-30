@@ -14,13 +14,13 @@ body{
 /******** Title ********/
 #title{
     background-color: #95AFBA;
-    font-family: bebasNeue;
-    margin-top: 10%;
-    margin-left:auto;
-    margin-right: auto;
-    box-shadow: 0px 0px 2px 0px #888888;
+    font-family: sans-serif;
+    margin : auto;
     height:100px;
-    width:50%;
+    width:100%;
+    position:fixed;
+    left:0px;
+    top:0px;
 }
 #title h1:only-of-type{
     color:white;
@@ -28,19 +28,160 @@ body{
     text-align: center;
     line-height: 100px;
 }
+
+#arrow{
+    height:40px;
+    width:40px;
+    background-color:#95B2C1;
+    color:white;
+    position:fixed;
+    top:50%;
+    left:40px;
+}
+
+.arrow{
+    font-size:40px;
+    position:absolute;
+    left:8px;
+}
+
+#arrow:hover > #portal{
+    width:100px;
+}
 /******** Portal ********/
 #portal{
     background-color:#95B2C1;
-    height:300px;
+    height:340px;
     width:20px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    /******** Portal ********/
+    position:fixed;
+    top:30%;
+    left:0px;
+/******** Portal ********/
     transition: width 2s;
 }
-#portal:hover{
-    width: 100px;
+
+#arrow:hover #links{
+    opacity:1;
 }
+
+#links{
+    width:40px;
+    height:280px;
+    position:absolute;
+    top:30px;;
+    left:20px;
+    opacity:0;
+    transition:3s;
+    font-family: sans-serif;
+    color:white;
+    
+}
+
+#h{
+    height:40px;
+    width:40px;
+    background-color:gray;
+    position:absolute;
+    color:white;
+}
+#h:hover > .homeA{
+    opacity: 1;
+}
+.homeA{
+    height:16px;
+    width:53px;
+    background-color:gray;
+    position:absolute;
+    top:10px;
+    left:50px;
+    opacity: 0;
+}
+.text{
+    position:absolute;
+    top:2px;
+    left:2px;
+    
+}
+#c{
+    height:40px;
+    width:40px;
+    background-color:gray;
+    position:absolute;
+    top:60px;
+    color:white;
+}
+.contact{
+    height:16px;
+    width:83px;
+    background-color:gray;
+    position:absolute;
+    top:10px;
+    left:50px;
+    opacity: 0;
+}
+#c:hover > .contact{
+    opacity: 1;
+}
+#s{
+    height:40px;
+    width:40px;
+    background-color:gray;
+    position:absolute;
+    top:120px;
+    color:white;
+}
+.standDown{
+    height:16px;
+    width:115px;
+    background-color:gray;
+    position:absolute;
+    top:10px;
+    left:50px;
+    color:white;
+    opacity: 0;
+}
+#s:hover > .standDown{
+    opacity: 1;
+}
+#m{
+    height:40px;
+    width:40px;
+    background-color:gray;
+    position:absolute;
+    top:180px;
+}
+.memorial{
+    height:16px;
+    width:115px;
+    background-color:gray;
+    position:absolute;
+    top:10px;
+    left:50px;
+    color:white;
+    opacity: 0;
+}
+#m:hover > .memorial{
+    opacity: 1;
+}
+#p{
+    height:40px;
+    width:40px;
+    background-color:gray;
+    position:absolute;
+    top:240px;
+}
+
+
+#textBox{
+    height:60%;  
+    width:60%;
+    background-color:red;
+    position:fixed;
+    left:20%;
+    top:20%;
+    background-color:#95AFBA;
+}
+
 /******** Footer ********/
 #footer{
     background-color:#96B6CB;
