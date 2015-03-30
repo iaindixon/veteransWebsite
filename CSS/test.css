@@ -29,9 +29,6 @@ body{
     line-height: 100px;
 }
 
-
-/******** Arrow ********/
-
 #arrow{
     height:40px;
     width:40px;
@@ -51,7 +48,7 @@ body{
 #arrow:hover > #portal{
     width:100px;
 }
-
+/******** Portal ********/
 #portal{
     background-color:#95B2C1;
     height:340px;
@@ -59,6 +56,7 @@ body{
     position:fixed;
     top:30%;
     left:0px;
+/******** Portal ********/
     transition: width 2s;
 }
 
@@ -66,7 +64,6 @@ body{
     opacity:1;
 }
 
-/******** Links ********/
 #links{
     width:40px;
     height:280px;
@@ -76,24 +73,10 @@ body{
     opacity:0;
     transition:3s;
     font-family: sans-serif;
-    color:white;    
-}
-
-.linkLetter{
-    font-size:30px;
-    position:absolute;
-    top:8px;
-    left:7px;
-
-}
-.text{
-    position:absolute;
-    top:2px;
-    left:2px;
+    color:white;
     
 }
 
-/******** Links - Home ********/
 #h{
     height:40px;
     width:40px;
@@ -113,8 +96,12 @@ body{
     left:50px;
     opacity: 0;
 }
-
-/******** Links - Contact ********/
+.text{
+    position:absolute;
+    top:2px;
+    left:2px;
+    
+}
 #c{
     height:40px;
     width:40px;
@@ -135,8 +122,6 @@ body{
 #c:hover > .contact{
     opacity: 1;
 }
-
-/******** Links - Stand Down ********/
 #s{
     height:40px;
     width:40px;
@@ -158,19 +143,16 @@ body{
 #s:hover > .standDown{
     opacity: 1;
 }
-
-/******** Links - Memorial ********/
 #m{
     height:40px;
     width:40px;
     background-color:gray;
     position:absolute;
     top:180px;
-    color:white;
 }
 .memorial{
     height:16px;
-    width:92px;
+    width:115px;
     background-color:gray;
     position:absolute;
     top:10px;
@@ -181,31 +163,15 @@ body{
 #m:hover > .memorial{
     opacity: 1;
 }
-
-/******** Links - Pictures ********/
 #p{
     height:40px;
     width:40px;
     background-color:gray;
     position:absolute;
     top:240px;
-    color:white;
-}
-.pictures {
-    height:16px;
-    width:86px;
-    background-color:gray;
-    position:absolute;
-    top:10px;
-    left:50px;
-    color:white;
-    opacity: 0;
-}
-#p:hover > .pictures{
-    opacity: 1;
 }
 
-/******** Content ********/
+
 #textBox{
     height:60%;  
     width:60%;
