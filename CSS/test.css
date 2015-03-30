@@ -14,7 +14,7 @@ body{
 /******** Title ********/
 #title{
     background-color: #95AFBA;
-    font-family: sans-serif;
+/*    font-family: sans-serif;*/
     margin : auto;
     height:100px;
     width:100%;
@@ -215,11 +215,9 @@ body{
     top:20%;
     background-color:#95AFBA;
 }
-
-.container-fluid textbook{
-    color:red;
+#textbox .container-fluid .jumbotron {
+    background-color: inherit;   
 }
-
 /******** Footer ********/
 #footer{
     background-color:#96B6CB;
