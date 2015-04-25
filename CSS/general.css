@@ -70,27 +70,27 @@ body{
 
 /******** Links ********/
 #links{
-    width:40px;
-    height:280px;
-    position:absolute;
-    top:30px;
-    right:40px;
-    opacity:0;
-    transition:3s;
+    width: 40px;
+    height: 280px;
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    opacity: 0;
+    transition: 3s;
     font-family: sans-serif;
-    color:white;  
+    color: white;  
 }
 
 .linkLetter{
-    font-size:30px;
-    position:absolute;
-    top:2px;
-    left:7px;
+    font-size: 30px;
+    position: absolute;
+    top: 2px;
+    left: 7px;
 }
 .text{
-    position:absolute;
-    top:0px;
-    left:2px;
+    position: absolute;
+    top: 0px;
+    left: 2px;
 }
 
 /******** Links - Home ********/
