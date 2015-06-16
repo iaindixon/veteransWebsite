@@ -4,12 +4,23 @@
     src: url('../fonts/BebasNeue.otf');
 }
 /******** Everything ********/
-*{
-    margin: 0;
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/******** General Links ********/
+a:link,a:hover,a:visited,a:active {
+    color: white;
+}
+/******** html ********/
+html {
+    height: 100%;   
 }
 /******** Body ********/
 body {
-    background-color: #eaeaea;   
+    height: 100%;
+    background-color: #eaeaea;  
+/*    box-shadow: inset 60px 0 100px #333;*/
 }
 /******** Header ********/
 #header {
@@ -19,23 +30,43 @@ body {
     line-height: 60px;
     text-align: center;
 }
-#header > [class*="col-"] {
+/*Inhereit used instead of raw number for easy change with header size change*/
+#header > .row > [class*="col-"] {
     position: relative;
     color: white; 
     line-height: inherit;
 }
-#header #firTab {
+#header > .row #firTab {
     background-color: #9393c1;
 }
-#header #secTab {
+#header > .row #secTab {
     background-color: #9e9ed0;
 }
-#header #thiTab {
+#header > .row #thiTab {
     background-color: #a5a5d9;
 }
-#header #forTab {
+#header > .row #forTab {
     background-color: #9e9ed0;
 }
-#header #fifTab {
+#header > .row #fifTab {
     background-color: #9393c1;
+}
+/******** Main ********/
+#main.container {
+    width: 70%;
+    height: 100%;
+    padding: 0px;
+    background-color: #dbdbdb;
+}
+#main.container > #picture {
+    position: relative;
+    width: 100%;
+    height:200px;
+    background-color: #bcbce0;
+}
+#main.container > #info.container > p {
+    position: relative;
+    width: 100%;
+    height: auto;
+    
 }
