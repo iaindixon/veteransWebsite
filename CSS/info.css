@@ -1,0 +1,36 @@
+/****Container****/
+
+.container {
+    position: relative;
+    top: 50px;  
+    height: 1000px;
+    width: 100%;    
+    background-color: inherit;
+}
+
+.container .col-sm-12 {
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.container .col-sm-12 h3 {
+    color: white;
+}
+
+.container .row .col-sm-12 .center .picture {
+    width: 100px;
+    max-width: 600px;
+    min-width: 300px;   
+}
+/****Header****/
+
+.title {
+    background-color: #333;
+    margin-left: -15px;
+}
+
+.title > h3 {
+    padding: 4px;  
+    padding-left: 15px;
+    text-transform: capitalize;
+}

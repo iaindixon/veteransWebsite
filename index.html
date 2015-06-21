@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html> 
     <head lang = en>
-        <script src="general.js"></script>
-        <script src="jquery-2.1.3.min.js"></script>
+        <title>VVLM</title>
+        <script src="javascript/general.js"></script>
+        <script src="javascript/jquery-2.1.3.min.js"></script> 
         <link rel="stylesheet" href="bootstrap-3.3.4-dist/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="CSS/general.css">
         <meta charset="utf-8"> 
-        <meta name="viewport" content="width=device-with, inition-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script >
+            onload = function() {
+                $('#computer.row > a').click(function () {
+                    $("#myIframe").css("height", "800px");
+                });  
+            }
+        </script>
     </head>
     <body>
 <!--        Header at the top of the page        -->
         <div id="header">
 <!--            Itens within header-->
-            <div class="row">
-                    <a href="#"><div class="col-md-2" id="firTab">Events</div></a>
-                    <a href="#"><div class="col-md-2" id="secTab">Calender</div></a>
-                    <a href="#"><div class="col-md-4" id="thiTab">Home</div></a>
-                    <a href="#"><div class="col-md-2" id="forTab">Info</div></a>
-                    <a href="#"><div class="col-md-2" id="fifTab">Contact</div></a>
+            <div id="computer" class="row">
+                    <a href="html/events.html" onclick="resizeIframe(this)" target="canvas"><div class="col-md-1 col-xs-12" id="firTab">Events</div></a>
+                    <a href="html/calendar.html" target="canvas"><div class="col-md-1 col-xs-12" id="secTab">Calender</div></a>
+                    <a href="html/home.html" target="canvas"><div class="col-md-1 col-xs-12" id="thiTab">Home</div></a>
+                    <a href="html/info.html" target="canvas"><div class="col-md-1 col-xs-12" id="forTab">Info</div></a>
+                    <a href="html/contact.html" target="canvas"><div class="col-md-1 col-xs-12" id="fifTab">Contact</div></a>
+                <div class="col-md-5"></div>
+                <div class="col-md-2">V V L M</div>
+            </div>
+            <div id="mobile" class="row">
             </div>
         </div>
 <!--        Division that will contain main information on the page-->
         <div id="main" class="container">
             <div id="picture">
-<!--                <img class="img-responsive" src="pictures/MemorialFront.jpg" alt="Memorial Front Picture">-->
+                <img class="img-responsive" src="pictures/MemorialFront.jpg" alt="Memorial Front Picture">
             </div>
             <div id="info" class="container">
-                <p>
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                </p>
+                <iframe id="myIframe" name="canvas" src="html/home.html" scrolling="no" onload='resizeIframe(this);' frameBorder="0"></iframe>
             </div>
         </div>
     </body>
