@@ -1,0 +1,8 @@
+#info.container > h1 {
+    margin-left: -15px;
+    padding: 4px;  
+    padding-left: 15px;
+    text-transform: capitalize;
+    color: #f0f8ff;
+    background-color: #333;   
+}
