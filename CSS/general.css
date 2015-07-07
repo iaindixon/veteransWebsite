@@ -10,13 +10,12 @@
 }
 p {
     position: relative;
-    width: inherit;
+/*    width: inherit;*/
     height: auto;
     background-color: #eee;
 }
-/******** @media ********/
+/********region @media ********/
 /* ----------- iPhone 4 and 4S ----------- */
-
 /* Portrait and Landscape */
 @media only screen 
   and (min-device-width: 320px) 
@@ -52,12 +51,14 @@ p {
       /* Header */
       #header {
           background-color: blue;   
+          display: none;
       }
       #header > #computer.row {
           display: none;
       }
       #header >#mobile.row {
           background-color: blue;
+          display: none;
       }
       /* Main */
       #main.container > #picture {
@@ -137,6 +138,7 @@ p {
   and (orientation: landscape) { 
 
 }
+/******** endregion ********/
 /******** html ********/
 html {
     height: 100%;   
@@ -160,8 +162,8 @@ body {
 #header > #computer.row {
     width: inherit;
 }
-#header > #computer.row > a > .col-md-1 {
-    color: #E6FAFC;
+#header > #computer.row > a > #head {
+    color: #f0f8ff;
 }
 #header > #computer.row > a > .col-md-1:hover {
     color: #4F5E69;
@@ -181,15 +183,26 @@ body {
     padding: 0px;
     background-color: #eee;
 }
-#main.container::before {
-    height: 0px;
-}
 #main.container > #picture {
     position: relative;
     width: 100%;
     height:300px;
-    overflow: hidden;
-    background-color: #bcbce0;
+    overflow: hidden; 
+}
+#main.container > #picture::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 100;
+    -moz-box-shadow:    inset  0px  1px 6px 0px #000, 
+                        inset  0px -1px 6px 0px #000;
+    -webkit-box-shadow: inset  0px  1px 6px 0px #000, 
+                        inset  0px -1px 6px 0px #000;
+     box-shadow:        inset  0px  1px 6px 0px #000, 
+                        inset  0px -1px 6px 0px #000; 
 }
 #main.container > #picture > img.img-responsive {
     position: absolute;
@@ -217,12 +230,17 @@ body {
     position: relative;
     width: inherit;
     height: 100%;
-    padding-top: 20px;
     margin-bottom: -10px;
 }
 /******** Info ********/
 #info.container > h1 {
-    color: #768C9C;
+    margin-left: -15px;
+    margin-top: 0px;
+    padding: 4px;  
+    padding-left: 15px;
+    text-transform: capitalize;
+    color: #f0f8ff;
+    background-color: #333;   
 }
 
 #info.container {
