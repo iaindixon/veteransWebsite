@@ -10,6 +10,13 @@
       #address {
           display: none;
       }
+      /* Lead */
+      body > #info.container > #lead.mobile {
+          height: 100px;
+          display: block;
+          padding-left: 40px;
+          background-color:aliceblue;
+      }
       /* Map */
       body > #info.container > #mapWrapper > #map-canvas{
           height: inherit;
@@ -50,8 +57,8 @@
 #address {
     height: 500px;
 }
-#address.col-sm-12 > address {
-    
+#lead.mobile {
+    display: none;
 }
 /******Contact******/
 #info.container > #address {
