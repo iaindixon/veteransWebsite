@@ -39,12 +39,12 @@ body {
 /** Welcome **/
 #welcome {
     margin-top: 75px;
-    height: 400px;
-    width: 100%;
     line-height: 400px;
     font-size: 70px;
     padding-left: 40px;
     padding-right: 40px;
+    height: 400px;
+    width: 100%;
     color: #FEFBF7;
     background-color: rgba(162,188,19,.639);
 }
@@ -59,11 +59,11 @@ body {
 }
 /** Home **/
 #home {
-    height: 650px;
-    width: 100%;
     padding-top: 20px;
     padding-left: 40px;
     padding-right: 40px;
+    height: 650px;
+    width: 100%;
     background-color: rgba(162,188,19,.639);
 }
 #home > h1 {
@@ -76,6 +76,7 @@ body {
     padding-top: 20px;
     height: 500px;
     width: 100%;
+    font-size: 16px;
 }
 #home > #hContent.container > #pictures > img {
     height: 225px;
@@ -89,15 +90,42 @@ body {
     padding-top: 20px;
     padding-left: 40px;
     padding-right: 40px;
-    color: rgba(162,188,19,.639);
-    background-color: FEFBF7;
+    font-size: 16px;
+    background-color: #FEFBF7;
 }
-#info > #army {
+#info > h1 {
+    color: rgba(162,188,19,.639);   
+}
+#info > .bench {
     margin-top: 20px;
     margin-left: 0px;
     margin-right: 0px;
     padding-top: 20px;
-    height: 500px;
+    height: auto;
     width: 100%;
-    background-color: aquamarine;   
+}
+#info  [class*="col-"] {
+    height: 200px;
+    overflow: hidden;
+}
+#info  [class*="col-"]  img {
+    height: 150px;
+    width: auto;
+}
+#info .rBranch {
+    position: absolute;
+    bottom: 0px;
+    right: 15px;   
+}
+#info .rPicture {
+    float: right;
+}
+#info > #navy  .holder {
+    background-color: rgba(162,188,19,.639);
+}
+#info > #navy p {
+    background-color: rgba(162,188,19,.639);   
+}
+#info > #airforce {
+    background-color: rgba(162,188,19,.639);   
 }
