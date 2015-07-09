@@ -30,11 +30,22 @@ body {
     margin-right: 30px;
     color: rgba(162,188,19,.639);   
 }
+/** Welcome **/
+#welcome {
+    margin-top: 75px;
+    height: 400px;
+    width: 100%;
+    line-height: 400px;
+    font-size: 70px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: #FEFBF7;
+    background-color: rgba(162,188,19,.639);
+}
 /** Memorial Front Picture **/
 #mFront {
     height: 600px;
     width: 100%;
-    margin-top: 75px;
     overflow: hidden;
 }
 #picture > img.img-responsive {
