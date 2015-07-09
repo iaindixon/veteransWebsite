@@ -9,6 +9,11 @@ body {
     height: 100%;
     background-color: white;
 }
+/** General **/
+.section {
+    margin: auto;
+    text-align: center;
+}
 /** Header **/
 #header {
     position: fixed;
@@ -16,6 +21,7 @@ body {
     height: 75px;
     width: 100%;
     margin: 0px;
+    z-index: 1000;
     background: linear-gradient(to bottom,#F2F2F2 0,#FFFFFF 100%);
     border-bottom: 1px solid rgba(162,188,19,.639);
 }
@@ -55,15 +61,13 @@ body {
 #home {
     height: 650px;
     width: 100%;
-    color: white;
     padding-top: 20px;
     padding-left: 40px;
     padding-right: 40px;
     background-color: rgba(162,188,19,.639);
 }
 #home > h1 {
-    margin: auto;
-    text-align: center;
+    color: white;   
 }
 #home > #hContent.container {
     margin-top: 20px;
@@ -77,4 +81,23 @@ body {
     height: 225px;
     width: 100%;
     overflow: hidden;
+}
+/** Info **/
+#info {
+    height: 700px;
+    widows: 100%;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: rgba(162,188,19,.639);
+    background-color: FEFBF7;
+}
+#info > #army {
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 20px;
+    height: 500px;
+    width: 100%;
+    background-color: aquamarine;   
 }
