@@ -11,41 +11,59 @@ body {
 }
 /** Header **/
 #header {
-    height: 30%;
+    position: fixed;
+    top: 0px;
+    height: 75px;
     width: 100%;
     margin: 0px;
     background: linear-gradient(to bottom,#F2F2F2 0,#FFFFFF 100%);
+    border-bottom: 1px solid rgba(162,188,19,.639);
 }
-/** Left **/
-#header > #left > * {
-    position: relative;
-    margin-left: 48%; 
-    height: 50px;
-    width: auto;
-    color: rgba(162,188,19,.639); 
-}
-#header > #left > img {
-    margin-top: 100px;
-}
-/** Center **/
-#header > #center > h1 {
+/** Links **/
+.links {
+    float: left;
+    margin-left: 20px;
     color: rgba(162,188,19,.639);
+}
+#logo {
+    float: right;
+    margin-right: 30px;
+    color: rgba(162,188,19,.639);   
+}
+/** Memorial Front Picture **/
+#mFront {
+    height: 600px;
+    width: 100%;
+    margin-top: 75px;
+    overflow: hidden;
+}
+#picture > img.img-responsive {
+    margin: -75px 0px 0px 0px;   
+}
+/** Home **/
+#home {
+    height: 650px;
+    width: 100%;
+    color: white;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: rgba(162,188,19,.639);
+}
+#home > h1 {
+    margin: auto;
     text-align: center;
 }
-/** Content **/
-#content {
-    height: 50%;
+#home > #hContent.container {
+    margin-top: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-top: 20px;
+    height: 500px;
+    width: 100%;
+}
+#home > #hContent.container > #pictures > img {
+    height: 225px;
     width: 100%;
     overflow: hidden;
-    background-color: #fff;
-}
-#content > img {
-    margin-top: -300px;   
-}
-/** Footer **/
-#footer {
-    height: 20%;
-    width: 100%;
-    margin: 0px;
-    background: linear-gradient(to bottom,#FFFFFF 0,#F2F2F2 100%);   
 }
