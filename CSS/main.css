@@ -5,14 +5,38 @@ html {
 }
 /** Body **/
 body {
-    width: 100%;
-    height: 100%;
-    background-color: white;
+    left: 0;
+    margin: 0;
+    position: relative;
+    background-color: #FEFBF7;
 }
 /** General **/
+.superSection {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: auto;
+    width: 100%;
+    font-size: 16px;
+}
 .section {
     margin: auto;
     text-align: center;
+}
+.content {
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 20px;
+    height: auto;
+    width: 100%;
+}
+.mobile {
+    display: none;   
+}
+.computer {
+    display: block;   
 }
 /** Header **/
 #header {
@@ -22,61 +46,81 @@ body {
     width: 100%;
     margin: 0px;
     z-index: 1000;
-    background: linear-gradient(to bottom,#F2F2F2 0,#FFFFFF 100%);
-    border-bottom: 1px solid rgba(162,188,19,.639);
+    background: linear-gradient(to bottom,#F2F2F2 0,#FEFBF7 100%);
+    border-bottom: 1px solid #666;
+}
+#header > a > .comptuer {
+    display: block;   
+}
+#header > a > #wLink {
+    color: #666;   
+}
+#header > a > #hLink {
+    color: rgb(216, 144, 144);
+}
+#header > a > #iLink {
+    color: rgb(255, 227, 77);   
+}
+#header > a > #eLink {
+    color: rgb(130, 177, 130);
+}
+#header > a > #cLink {
+    color: #666;   
 }
 /** Links **/
 .links {
     float: left;
     margin-left: 20px;
-    color: rgba(162,188,19,.639);
 }
 #logo {
     float: right;
     margin-right: 30px;
-    color: rgba(162,188,19,.639);   
+    color: #666
 }
 /** Welcome **/
 #welcome {
-    margin-top: 75px;
-    line-height: 400px;
     font-size: 70px;
     padding-left: 40px;
     padding-right: 40px;
-    height: 400px;
+    padding-top: 25%;
+    height: 1000px;
     width: 100%;
     color: #FEFBF7;
-    background-color: rgba(162,188,19,.639);
+    text-align: center;
+    background-color: rgb(216, 144, 144);
+}
+#welcome > a {
+   text-decoration: none;
+}
+#welcome > a > #arrow {
+    margin-left: 50%;
+    margin-top: 18%;
+    padding: 0px;
+    font-size: 100px;
+    height: 50px;
+    width: 50px;
+    color: white;
+    transition: 1s ease-in-out;
+}
+#welcome > #arrow:hover {
+    transform: translateY(20px);
+    color: #666;
 }
 /** Memorial Front Picture **/
 #mFront {
-    height: 600px;
+    height: 270px;
     width: 100%;
     overflow: hidden;
 }
-#picture > img.img-responsive {
-    margin: -75px 0px 0px 0px;   
+#mFront > img {
+    width: 100%;
 }
 /** Home **/
 #home {
-    padding-top: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-    height: 650px;
-    width: 100%;
-    background-color: rgba(162,188,19,.639);
+    background-color: rgba(255, 227, 77,.6);
 }
 #home > h1 {
     color: white;   
-}
-#home > #hContent.container {
-    margin-top: 20px;
-    margin-right: 0px;
-    margin-left: 0px;
-    padding-top: 20px;
-    height: 500px;
-    width: 100%;
-    font-size: 16px;
 }
 #home > #hContent.container > #pictures > img {
     height: 225px;
@@ -85,24 +129,10 @@ body {
 }
 /** Info **/
 #info {
-    height: 700px;
-    widows: 100%;
-    padding-top: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-    font-size: 16px;
     background-color: #FEFBF7;
 }
 #info > h1 {
-    color: rgba(162,188,19,.639);   
-}
-#info > .bench {
-    margin-top: 20px;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-top: 20px;
-    height: auto;
-    width: 100%;
+    color: rgb(130, 177, 130);   
 }
 #info  [class*="col-"] {
     height: 200px;
@@ -112,6 +142,9 @@ body {
     height: 150px;
     width: auto;
 }
+#info h3 {
+    color: rgb(130, 177, 130);   
+}
 #info .rBranch {
     position: absolute;
     bottom: 0px;
@@ -120,12 +153,55 @@ body {
 #info .rPicture {
     float: right;
 }
-#info > #navy  .holder {
-    background-color: rgba(162,188,19,.639);
+/** Events **/
+#event {
+    height: 876px;
+    background-color: rgb(130, 177, 130);
 }
-#info > #navy p {
-    background-color: rgba(162,188,19,.639);   
+#event > h1 {
+    color: #FEFBF7;
+    text-align: center;
 }
-#info > #airforce {
-    background-color: rgba(162,188,19,.639);   
+#event > #eventHolder {
+    margin-top: 30px;   
+}
+#event > #eventHolder > .col-md-4 {
+    text-align: center;
+}   
+#event > #eventHolder > .col-md-4 > p {
+    margin-top: 20px;   
+}
+/** Contacts **/
+#contact {
+    height: 826px;
+    background-color: #FEFBF7;
+}
+#contact > h1 {
+    color: #666;
+    text-align: center;
+}
+#contact > #hContent {
+    margin-top: 150px;
+    text-align: center;   
+}
+#contact > #hContent > #phone {
+    color: rgb(216, 144, 144);
+}
+#contact > #hContent > #address > a {
+    color: rgb(255, 227, 77);   
+}
+#contact > #hContent > #email > a {
+    color: rgb(130, 177, 130);
+}
+#contact > #hContent img {
+    display: block;
+    margin: auto;
+    height: auto;
+    width: 100px;
+}
+/** Footer **/
+#footer {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(130, 177, 130);
 }
