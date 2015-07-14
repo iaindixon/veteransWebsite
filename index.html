@@ -4,44 +4,149 @@
         <title>VVLM</title>
         <script src="javascript/jquery-2.1.3.min.js"></script> 
         <script src="javascript/general.js"></script>
+        <script src="javascript/evil.js"></script>
         <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="CSS/iPhone5.css">
         <link rel="stylesheet" type="text/css" href="CSS/main.css">
         <meta charset="utf-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-    <body>
-        <div id="header">
+    <body>   
+        <div id="dropDown" class="mobile row">
+                    <a href="#welcome"><div id="wLink" class="links col-xs-12 mobile"><h2>Welcome</h2></div></a>
+                    <a href="#mFront"><div id="hLink" class="links col-xs-12 mobile"><h2>Home</h2></div></a>
+                    <a href="#info"><div id="iLink" class="links col-xs-12 mobile"><h2>Info</h2></div></a>
+                    <a href="#event"><div id="eLink" class="links col-xs-12 mobile"><h2>Events</h2></div></a>
+                    <a href="#contact"><div id="cLink" class="links col-xs-12 mobile"><h2>Contact</h2></div></a>
+            </div>
+        <div id="wrapper">
+            <div id="header" class="computer mobile">
+                <div id="iconMenu" class="toggleOff mobile">Menu</div>
             <!-- The single letter at the begining of each id is the first letter of the page subsection that it links to. -->
-            <div id="hLink" class="links"><h2>Home</h2></div>
-            <div id="iLink" class="links"><h2>Info</h2></div>
-            <div id="eLink" class="links"><h2>Events</h2></div>
-            <div id="cLink" class="links"><h2>Contact</h2></div>
-            <div id="logo"><h1>V V L M</h1></div>
-        </div>
-        <div id="welcome">
-            <p>
-                Welcome to the Vietnam Veterans Living Memorial
-            </p>
-        </div>
-        <div id="mFront">
-            <img class="img-responsive" src="pictures/MemorialFront.jpg" alt="Memorial Front">
-        </div>
-        <div id="home">
-            <h1 class="section">Home</h1>
-            <div id="hContent" class="container row">
-                <div id="" class="col-md-8">
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <a href="#welcome"><div id="wLink" class="links computer"><h2>Welcome</h2></div></a>
+            <a href="#mFront"><div id="hLink" class="links computer"><h2>Home</h2></div></a>
+            <a href="#info"><div id="iLink" class="links computer"><h2>Info</h2></div></a>
+            <a href="#event"><div id="eLink" class="links computer"><h2>Events</h2></div></a>
+            <a href="#contact"><div id="cLink" class="links computer"><h2>Contact</h2></div></a>
+            <div id="logo" class="computer"><h1>V V L M</h1></div>
+            </div>
+            <div id="welcome">
+                <p>
+                    Welcome to the Vietnam Veterans Living Memorial
+                </p>
+                <a href="#mFront"><p id="arrow">&#8964;</p></a>
+    </div>
+            <div id="mFront">
+                <img class="" src="pictures/MemorialFront.jpg" alt="Memorial Front">
+    </div>
+            <div id="home" class="superSection">
+                <h1 class="section">Home</h1>
+                <div id="hContent" class="container row content">
+                    <div id="" class="col-md-8">
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor</p>
+                    </div>
+                    <div id="pictures" class="col-md-4">
+                        <img src="#">
+                        <img src="#">
+                    </div>
                 </div>
-                <div id="pictures" class="col-md-4">
-                    <img src="#">
-                    <img src="#">
+                <div id="" class=""></div>
+    </div>
+            <div id="info" class="superSection">
+                <h1 class="section">Info</h1>
+                <div id="army" class="container row content">
+                    <div class="col-md-7">
+                        <p>One of the five uniformed divisions of the united states armed forces, founded on the 14th of June, 1775. The US Army conducts operations on land-based regions of US control and Interest. The Army has been active in nearly all military engagements, initially forming during the American War for independance as the continental army. During WW2 The US Army invaded Axis controlled regions, along with the other Allied forces. Operation Overlord was a major success of the the Army, coming at great cost. The Army fought during the Vietnam conflict, being a major portion of the US Armed forces in Vietnam.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="rPicture" src="pictures/armyBench.jpg">
+                        <h3 class="rBranch">ARMY</h3>
+                    </div>
+                </div>
+                <hr>
+                <div id="navy" class="container row content">
+                    <div class="col-md-5">
+                        <div class="holder">
+                            <img src="pictures/navyBench.jpg">
+                            <h3>NAVY</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <p>One of the five uniformed divisions of the united states armed forces, founded on the 13th of October, 1775. The US Navy protects the United State’s Coasts from enemy invasion, transports supplies and personnel and protects regions of US interest. The Navy transported large quantities of soldiers to and from the United states in many Conflicts. Most Notably, the Navy Bombarded the shores of Normandy and supplied crafts for transportation and protection during operation overlord. During the Cold war, the Navy made several important contributions to United States Interest. Blockading Cuba during the Cuban Missile crisis, protecting transports and deterring nuclear escalation through patrol and possession of nuclear weapons.</p>
+                    </div>
+                </div>
+                <hr>
+                <div id="airforce" class="container row content">
+                    <div class="col-md-7">
+                        <p>One of the five uniformed division of the united states armed forces, founded on the 18th of September, 1947. The US Air force protects US and NATO Airspace, along with associated US Controlled regions. The US Air force has offered protection to other armed forces during conflicts, such as the Army and Marines. Support and transportation is another extremely important contribution that the Air Force provided, saving many lives in the quick and speedy gathering and distribution of supplies, soldiers and other assets. Notably, transporting Army and Marine Forces during the Vietnam conflict, executing airstrikes and gathering intelligence.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="rPicture" src="pictures/airforceBench.jpg">
+                        <h3 class="rBranch">AIRFORCE</h3>
+                    </div>
+                </div>
+                <hr>
+                <div id="marines" class="container row content">
+                    <div class="col-md-5">
+                        <img src="pictures/marinesBench.jpg">
+                        <h3>MARINES</h3>
+                    </div>
+                    <div class="col-md-7">
+                        <p>One of the five uniformed divisions of the united states armed forces, founded 11th of July, 1798. The US Marine Corp is a rapid-deploy armed land force used in most of the US  military engagements. The US Marine Corp has a close relationship with the US Navy, as they were their main source of quick deploy transportation. Notably used in the Pacific theater during WW2, and being extremely hardy. During Vietnam conflict the marines were a major contributor to the land-based invasions along with the US Army.</p>
+                    </div>
+                </div>
+                <hr>
+                <div id="coastGuard" class="container row content">
+                    <div class="col-md-7">
+                        <p>One of the five uniformed divisions of the united states armed forces, founded on the 4th of August, 1790. The US Coast Guard protect the United State’s Maritime interests and coasts of US territories. They were used in many military engagements, predominantly to pilot assault crafts for invasions. Most notably, the Coast guard's piloted the assault crafts during the  operation overlord, and the Vietnam Conflict. </p>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="rPicture" src="pictures/coastGuardBench.jpg">
+                        <h3 class="rBranch">COAST GUARD</h3>
+                    </div>
+                </div>
+    </div>
+            <div id="event" class="superSection">
+                <h1 class="hContent">Events</h1>
+                <div id="eventHolder" class="row">
+                    <div id="eventOne" class="col-md-4">
+                        <img class="img-responsive" src="pictures/airforceBench.jpg">
+                        <h3>Lorem Ipsum</h3>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    </div>
+                    <div id="eventTwo" class="col-md-4">
+                        <img class="img-responsive" src="pictures/armyBench.jpg">
+                        <h3>Lorem Ipsum</h3>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    </div>
+                    <div id="eventThree" class="col-md-4">
+                        <img class="img-responsive" src="pictures/coastGuardBench.jpg">
+                        <h3>Lorem Ipsum</h3>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    </div>
+                </div>
+    </div>
+            <div id="contact" class="superSection">
+                <h1 class="hContent">Contact</h1>
+                <div id="hContent" class="container row content">
+                    <div id="phone" class="col-md-4">
+                        <img src="pictures/telephone.svg">
+                        <h3>
+                            <abbr title="Brenda Watson">P:</abbr> (919) 500-1817<br>
+                            <abbr title="Jerond Belton">P:</abbr> (919) 383-0453
+                        </h3>
+                    </div>
+                    <div id="address" class="col-md-4">
+                        <img src="pictures/pin.svg">
+                        <a href="https://www.google.com/maps/place/600+W+Murray+Ave,+Durham,+NC+27704/@36.029667,-78.900318,17z/data=!4m2!3m1!1s0x89ace3be1119230f:0xc4957d002f61061d"><h3>600 W. Murray Avenue<br> Durham, NC</h3></a>
+                    </div>
+                    <div id="email" class="col-md-4">
+                        <img src="pictures/mail.svg">
+                        <a href="mailto:woundedheartcorp@nc.rr.com"><h3>woundedheartcorp@nc.rr.com</h3></a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div id="info">
-            <h1 class="section">Info</h1>
-            <div id="army" class="container row">
-            </div>
+            <div id="footer"></div>
         </div>
     </body>
-</html>     
+</html>
