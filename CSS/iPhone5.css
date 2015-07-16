@@ -1,7 +1,9 @@
 /* ----------- iPhone 5 and 5S ----------- */
-
 /* Portrait and Landscape */
-@media screen and (max-width: 765px) {
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
     /** Header **/
     #header.mobile  *.mobile {
         display: block;   
@@ -26,23 +28,25 @@
         position: fixed;
         left: -285px;  
         margin: 0px;
+        margin-top: -50px;
         display: block;
-        height: 1000px;
+        height: 100%;
         width: 285px;
-        z-index: 1000;
-        background-color: blue;
+        background-color: #666;
     }
     #dropDown.mobile > a > *.mobile {
-        display: block;   
+        display: block;
+        font-size: 20%;
     }
     .links {
-        color: #666;
+        color: white;
     }
     .links > h2 {
         font-size: 10em;
     }
     /** Welcome **/
     #welcome {
+        margin-top: 50px;
         height: auto;
     }
     #welcome > p {

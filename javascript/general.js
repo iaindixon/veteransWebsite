@@ -1,29 +1,26 @@
 /*jslint browser: true*/
 /*global $, jQuery, alert*/
 /*Creates the Moving bar when in iPhone mode*/
-function toggle() {
-    'use strict';
-    $('#iconMenu.toggleOn').click(function () {
-        $('#dropDown').animate({
-            left: '-285px'
-        }, 200);
-        $('body').animate({
-            left: '0px'
-        }, 200);
-        $('#iconMenu.toggleOn').removeClass('toggleOn').addClass('toggleOff');
-    });
-}
 function main() {
     'use strict';
-    $('#iconMenu.toggleOff').click(function () {
-        $('#dropDown').animate({
-            left: '0px'
-        }, 200);
-        $('body').animate({
-            left: '285px'
-        }, 200);
-        $('#iconMenu.toggleOff').removeClass('toggleOff').addClass('toggleOn');
-        toggle();
+    var timing = 200;
+    $('#iconMenu').click(function () {
+        if($('#iconMenu').hasClass('visible')) {
+            $('#dropDown').animate({
+                left: '-285px'
+            }, timing);
+            $('body').animate({
+                left: '0px'
+            }, timing);
+        } else {
+            $('#dropDown').animate({
+                left: '0px'
+            }, timing);
+            $('body').animate({
+                left: '285px'
+            }, timing);
+        }
+        $('#iconMenu').toggleClass('visible');
     });
 }
 

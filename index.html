@@ -6,8 +6,8 @@
         <script src="javascript/general.js"></script>
         <script src="javascript/evil.js"></script>
         <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="CSS/iPhone5.css">
         <link rel="stylesheet" type="text/css" href="CSS/main.css">
+        <link rel="stylesheet" type="text/css" href="CSS/iPhone5.css">
         <meta charset="utf-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
@@ -21,7 +21,7 @@
             </div>
         <div id="wrapper">
             <div id="header" class="computer mobile">
-                <div id="iconMenu" class="toggleOff mobile">Menu</div>
+                <div id="iconMenu" class="mobile">Menu</div>
             <!-- The single letter at the begining of each id is the first letter of the page subsection that it links to. -->
             <a href="#welcome"><div id="wLink" class="links computer"><h2>Welcome</h2></div></a>
             <a href="#mFront"><div id="hLink" class="links computer"><h2>Home</h2></div></a>
@@ -34,8 +34,12 @@
                 <p>
                     Welcome to the Vietnam Veterans Living Memorial
                 </p>
-                <a href="#mFront"><p id="arrow">&#8964;</p></a>
-    </div>
+                <a href="#mFront">
+                    <div id="arrow">
+                        <p>&#8964;</p>
+                    </div>        
+                </a>
+            </div>
             <div id="mFront">
                 <img class="" src="pictures/MemorialFront.jpg" alt="Memorial Front">
     </div>
