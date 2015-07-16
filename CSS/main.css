@@ -187,13 +187,13 @@ body {
     text-align: center;   
 }
 #contact > #hContent > #phone {
-    color: rgb(216, 144, 144);
+    color: #87A0B2;
 }
 #contact > #hContent > #address > a {
-    color: rgb(255, 227, 77);   
+    color: #A7C4B5;   
 }
 #contact > #hContent > #email > a {
-    color: rgb(130, 177, 130);
+    color: #65655E;
 }
 #contact > #hContent img {
     display: block;
@@ -205,5 +205,5 @@ body {
 #footer {
     height: 50px;
     width: 100%;
-    background-color: rgb(130, 177, 130);
+    background-color: #0C0C0C;
 }
