@@ -122,7 +122,7 @@ body {
 
 /* D7DAE5 - rgba(255, 227, 77,.6)*/
 #home > h1 {
-    color: white;   
+    color: #272727;   
 }
 #home > #hContent.container > #pictures > img {
     height: 225px;
@@ -187,10 +187,10 @@ body {
     text-align: center;   
 }
 #contact > #hContent > #phone {
-    color: #87A0B2;
+    color: #6588A1;
 }
 #contact > #hContent > #address > a {
-    color: #A7C4B5;   
+    color: #3A435E;   
 }
 #contact > #hContent > #email > a {
     color: #65655E;
