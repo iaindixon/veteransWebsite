@@ -145,24 +145,11 @@ body {
 #info  [class*="col-"] {
     height: auto;
 }   
-/*
-#info  [class*="col-"]  img {
-    height: 150px;
-    width: auto;
-}
-*/
 #info h3 {
     color: #666;   
 }
 #info hr {
     border-color: #666;   
-}
-#info .rBranch {
-/*
-    position: absolute;
-    bottom: 0px;
-    right: 15px;   
-*/
 }
 /** Events **/
 #event {
