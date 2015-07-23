@@ -47,8 +47,6 @@ body {
     z-index: 1000;
     background: #0C0C0C;
     border-bottom: 1px solid #666;
-    
-/*linear-gradient(to bottom,#F2F2F2 0,#FEFBF7 100%) - 0C0C0C - 271F30*/
 }
 #header > a > .comptuer {
     display: block;   
