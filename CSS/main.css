@@ -127,15 +127,7 @@ body {
 
 /* D7DAE5 - rgba(255, 227, 77,.6)*/
 #home > h1 {
-<<<<<<< Updated upstream
-    color: #272727;   
-=======
-<<<<<<< HEAD
-    color: #272727;   
-=======
     color: #666;   
->>>>>>> PLS WORK
->>>>>>> Stashed changes
 }
 #home > #hContent.container > #pictures > img {
     height: 225px;
@@ -148,16 +140,17 @@ body {
     font-size: 120%;
 }
 #info > h1 {
-    color: #666;   
+    color: #666;
 }
 #info  [class*="col-"] {
-/*    height: 200px;*/
-    overflow: scroll;
+    height: auto;
 }   
+/*
 #info  [class*="col-"]  img {
     height: 150px;
     width: auto;
 }
+*/
 #info h3 {
     color: #666;   
 }
@@ -165,12 +158,11 @@ body {
     border-color: #666;   
 }
 #info .rBranch {
+/*
     position: absolute;
     bottom: 0px;
     right: 15px;   
-}
-#info .rPicture {
-    text-align: right
+*/
 }
 /** Events **/
 #event {
