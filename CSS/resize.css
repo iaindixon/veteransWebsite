@@ -1,9 +1,6 @@
-/* ----------- iPhone 5 and 5S ----------- */
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+/** iPhone Size **/
+@media (min-device-width: 320px) 
+  and (max-device-width: 568px) {
     /** Header **/
     #header.mobile  *.mobile {
         display: block;   
@@ -18,10 +15,25 @@
     #header > a > *.computer {
         display: none;
     }
-    #header > #iconMenu {
-        margin-left: 20px;
-        font-size: 20px;
-        line-height: 50px;
+    #header.mobile > h3 {
+        width: 100%;
+        text-align: center;
+        color: white;
+    }
+    /** Nav **/
+    nav.mobile > ul {
+        display: none;
+        padding: 0;
+        overflow: hidden;
+        text-align: center;
+        color: white;
+        background-color: #000005;
+    }
+    nav.mobile > ul > li {
+        padding: 20px;
+        box-sizing: border-box;
+        width: 100%;
+        display: block;
     }
     /** Dropdown **/
     #dropDown {
@@ -48,8 +60,22 @@
     #welcome {
         margin-top: 50px;
         height: auto;
+        line-height: 20px;
     }
     #welcome > p {
         font-size: 20px;
+    }
+    /** Contact **/
+    #contact > #hContent > * > h3 {
+        display: none;   
+    }
+    #contact > #hContent > * > a > h3 {
+        display: none;
+    }
+    #contact > #hContent {
+        margin-top: 0px;
+    }
+    #contact > #hContent > * > a > img {
+        margin-top: 20px;
     }
 }

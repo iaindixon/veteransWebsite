@@ -1,7 +1,7 @@
 /** HTML **/
 html {
-    width: 100%;
-    height: 100%;
+    max-height: 100%;
+    max-width: 100%;
 }
 /** Body **/
 body {
@@ -28,7 +28,6 @@ body {
     margin-top: 20px;
     margin-left: 0px;
     margin-right: 0px;
-    padding-top: 20px;
     height: auto;
     width: 100%;
 }
@@ -55,7 +54,7 @@ body {
     display: block;   
 }
 #header > a > #wLink {
-    color: #FEFBF7;   
+    color: #D7DAE5;   
 }
 #header > a > #hLink {
     color: #D7DAE5;
@@ -69,6 +68,9 @@ body {
 #header > a > #cLink {
     color: #D7DAE5;   
 }
+#header > a > * :hover {
+    color: #FFFFFF;
+}
 /** Links **/
 .links {
     float: left;
@@ -77,15 +79,14 @@ body {
 #logo {
     float: right;
     margin-right: 30px;
-    color: #E8D7FF;
+    color: #D7DAE5;
 }
 /** Welcome **/
 #welcome {
     margin-top: 75px;
-    height: 500px;
+    height: auto;
     width: 100%;
-    line-height: 400px;
-    font-size: 70px;
+    font-size: 500%;
     padding-left: 40px;
     padding-right: 40px;
     padding-top: 10%;
@@ -94,6 +95,9 @@ body {
     color: #FEFBF7;
     text-align: center;
     background-color: #87A0B2;
+}
+#welcome > p {
+    margin-top: 10%;   
 }
 #welcome > a {
    text-decoration: none;
@@ -118,11 +122,20 @@ body {
 /** Home **/
 #home {
     background-color: #D7DAE5;
+    font-size: 120%;
 }
 
 /* D7DAE5 - rgba(255, 227, 77,.6)*/
 #home > h1 {
+<<<<<<< Updated upstream
     color: #272727;   
+=======
+<<<<<<< HEAD
+    color: #272727;   
+=======
+    color: #666;   
+>>>>>>> PLS WORK
+>>>>>>> Stashed changes
 }
 #home > #hContent.container > #pictures > img {
     height: 225px;
@@ -132,20 +145,24 @@ body {
 /** Info **/
 #info {
     background-color: #EDEAF2;
+    font-size: 120%;
 }
 #info > h1 {
-    color: rgb(130, 177, 130);   
+    color: #666;   
 }
 #info  [class*="col-"] {
-    height: 200px;
-    overflow: hidden;
-}
+/*    height: 200px;*/
+    overflow: scroll;
+}   
 #info  [class*="col-"]  img {
     height: 150px;
     width: auto;
 }
 #info h3 {
-    color: rgb(130, 177, 130);   
+    color: #666;   
+}
+#info hr {
+    border-color: #666;   
 }
 #info .rBranch {
     position: absolute;
@@ -153,15 +170,16 @@ body {
     right: 15px;   
 }
 #info .rPicture {
-    float: right;
+    text-align: right
 }
 /** Events **/
 #event {
-    height: 876px;
+    height: auto;
+    font-size: 120%;
     background-color: #DCEDFF;
 }
 #event > h1 {
-    color: #FEFBF7;
+    color: #666;
     text-align: center;
 }
 #event > #eventHolder {
@@ -175,7 +193,7 @@ body {
 }
 /** Contacts **/
 #contact {
-    height: 826px;
+    height: auto;
     background-color: #FEFBF7;
 }
 #contact > h1 {
@@ -183,17 +201,21 @@ body {
     text-align: center;
 }
 #contact > #hContent {
-    margin-top: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     text-align: center;   
 }
 #contact > #hContent > #phone {
-    color: #6588A1;
+    color: #666;
 }
 #contact > #hContent > #address > a {
-    color: #3A435E;   
+    color: #666;
+}
+#contact > #hContent > #address > a {
+    color: #666;   
 }
 #contact > #hContent > #email > a {
-    color: #65655E;
+    color: #666;
 }
 #contact > #hContent img {
     display: block;
@@ -205,5 +227,9 @@ body {
 #footer {
     height: 50px;
     width: 100%;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 110%;
     background-color: #0C0C0C;
 }

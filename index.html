@@ -7,35 +7,37 @@
         <script src="javascript/evil.js"></script>
         <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="CSS/main.css">
-        <link rel="stylesheet" type="text/css" href="CSS/iPhone5.css">
+        <link rel="stylesheet" type="text/css" href="CSS/resize.css">
         <meta charset="utf-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>   
-        <div id="dropDown" class="mobile row">
-                    <a href="#welcome"><div id="wLink" class="links col-xs-12 mobile"><h2>Welcome</h2></div></a>
-                    <a href="#mFront"><div id="hLink" class="links col-xs-12 mobile"><h2>Home</h2></div></a>
-                    <a href="#info"><div id="iLink" class="links col-xs-12 mobile"><h2>Info</h2></div></a>
-                    <a href="#event"><div id="eLink" class="links col-xs-12 mobile"><h2>Events</h2></div></a>
-                    <a href="#contact"><div id="cLink" class="links col-xs-12 mobile"><h2>Contact</h2></div></a>
-            </div>
         <div id="wrapper">
             <div id="header" class="computer mobile">
-                <div id="iconMenu" class="mobile">Menu</div>
+                <h3 class="mobile">V V L M</h3>
             <!-- The single letter at the begining of each id is the first letter of the page subsection that it links to. -->
-            <a href="#welcome"><div id="wLink" class="links computer"><h2>Welcome</h2></div></a>
-            <a href="#mFront"><div id="hLink" class="links computer"><h2>Home</h2></div></a>
-            <a href="#info"><div id="iLink" class="links computer"><h2>Info</h2></div></a>
-            <a href="#event"><div id="eLink" class="links computer"><h2>Events</h2></div></a>
-            <a href="#contact"><div id="cLink" class="links computer"><h2>Contact</h2></div></a>
-            <div id="logo" class="computer"><h1>V V L M</h1></div>
+               <nav class="mobile">
+                   <ul>
+                       <li>Welcome</li>
+                       <li>Home</li>
+                       <li>Info</li>
+                       <li>Events</li>
+                       <li>Contact</li>
+                   </ul>
+               </nav>
+                <a href="#welcome"><div id="wLink" class="links computer"><h2>Welcome</h2></div></a>
+                <a href="#mFront"><div id="hLink" class="links computer"><h2>Home</h2></div></a>
+                <a href="#info"><div id="iLink" class="links computer"><h2>Info</h2></div></a>
+                <a href="#event"><div id="eLink" class="links computer"><h2>Events</h2></div></a>
+                <a href="#contact"><div id="cLink" class="links computer"><h2>Contact</h2></div></a>   
+                <div id="logo" class="computer"><h1>V V L M</h1></div>
             </div>
             <div id="welcome">
                 <p>
                     Welcome to the Vietnam Veterans Living Memorial
                 </p>
                 <a href="#mFront">
-                    <div id="arrow">
+                    <div id="arrow" class="mobile">
                         <p>&#8964;</p>
                     </div>        
                 </a>
@@ -59,10 +61,10 @@
             <div id="info" class="superSection">
                 <h1 class="section">Info</h1>
                 <div id="army" class="container row content">
-                    <div class="col-md-7">
+                    <div class="col-md-9 col-sm-12">
                         <p>One of the five uniformed divisions of the united states armed forces, founded on the 14th of June, 1775. The US Army conducts operations on land-based regions of US control and Interest. The Army has been active in nearly all military engagements, initially forming during the American War for independance as the continental army. During WW2 The US Army invaded Axis controlled regions, along with the other Allied forces. Operation Overlord was a major success of the the Army, coming at great cost. The Army fought during the Vietnam conflict, being a major portion of the US Armed forces in Vietnam.</p>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-3 col-sm-12">
                         <img class="rPicture" src="pictures/armyBench.jpg">
                         <h3 class="rBranch">ARMY</h3>
                     </div>
@@ -141,16 +143,18 @@
                         </h3>
                     </div>
                     <div id="address" class="col-md-4">
-                        <img src="pictures/pin.svg">
+                        <a href="https://www.google.com/maps/place/600+W+Murray+Ave,+Durham,+NC+27704/@36.029667,-78.900318,17z/data=!4m2!3m1!1s0x89ace3be1119230f:0xc4957d002f61061d"><img src="pictures/pin.svg"></a>
                         <a href="https://www.google.com/maps/place/600+W+Murray+Ave,+Durham,+NC+27704/@36.029667,-78.900318,17z/data=!4m2!3m1!1s0x89ace3be1119230f:0xc4957d002f61061d"><h3>600 W. Murray Avenue<br> Durham, NC</h3></a>
                     </div>
                     <div id="email" class="col-md-4">
-                        <img src="pictures/mail.svg">
+                        <a href="mailto:woundedheartcorp@nc.rr.com"><img src="pictures/mail.svg"></a>
                         <a href="mailto:woundedheartcorp@nc.rr.com"><h3>woundedheartcorp@nc.rr.com</h3></a>
                     </div>
                 </div>
             </div>
-            <div id="footer"></div>
+            <div id="footer">
+                Made by Iain Dixon and Ryan Kleissler
+            </div>
         </div>
     </body>
 </html>
